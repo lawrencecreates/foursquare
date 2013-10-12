@@ -716,6 +716,7 @@ def _request_with_retry(url, headers={}, data=None):
 
 def _process_request_with_httplib2(url, headers={}, data=None):
     """Make the request and handle exception processing"""
+    print(url)
     h = httplib2.Http(**HTTP_KWARGS)
     try:
         if data:
